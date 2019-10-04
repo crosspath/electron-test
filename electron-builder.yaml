@@ -1,0 +1,12 @@
+directories:
+  output: dist
+  buildResources: build
+files:
+  - 'dist/.renderer-index-template.html'
+  - 'dist/main/*'
+  - 'dist/renderer/*'
+snap:
+  confinement: strict
+  grade: devel
+electronVersion: 6.0.11
+asar: false
