@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "electron .",
-    "pack": "electron-webpack && electron-builder --dir -c.compression=store -c.mac.identity=null",
+    "pack": "electron-webpack && electron-builder --dir -c electron-builder.yaml -c.compression=store -c.mac.identity=null",
     "dist": "electron-webpack && electron-builder -c electron-builder.yaml",
     "dev": "electron-webpack dev",
     "compile": "electron-webpack"

@@ -14,17 +14,12 @@ For existing code:
 yarn install
 ```
 
-\+ fix
-
-```
-cp dist/electron-builder.yaml node_modules/electron-webpack/electron-builder.yml
-```
-
 # Test
 
 ```
+# for projects without Webpack
 yarn start
-# or
+# this template, with Webpack
 yarn dev
 ```
 
@@ -57,5 +52,5 @@ sudo snap remove electron-test
 # Remove files for building sources
 
 ```
-rm -R {dist,prime,snap,stage}
+rm -R {dist,node_modules,prime,snap,stage}
 ```
